@@ -13,6 +13,7 @@ import { JoseComponent } from './experiences-pages/jose/jose.component';
 import { LourdesComponent } from './experiences-pages/lourdes/lourdes.component';
 import { WelcomeComponent } from './experiences-pages/welcome/welcome.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { GoTopComponent } from './shared/go-top/go-top.component';
 
 
 @NgModule({
@@ -26,6 +27,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     JoseComponent,
     LourdesComponent,
     WelcomeComponent,
+    GoTopComponent,
   ],
   imports: [
     BrowserModule,
