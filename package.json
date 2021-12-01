@@ -20,6 +20,7 @@
     "@angular/router": "~13.0.0",
     "@popperjs/core": "^2.10.2",
     "angular-gist": "^2.0.0",
+    "aos": "^2.3.4",
     "bootstrap": "^5.1.3",
     "bootswatch": "^5.1.3",
     "jquery": "^3.6.0",
