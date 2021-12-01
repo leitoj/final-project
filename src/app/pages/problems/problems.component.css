@@ -1,0 +1,9 @@
+.problem-list li{ 
+  margin: 5rem 0;
+}
+
+.copy{
+  font-size: 18px;
+  font-weight: bold;
+  color: #5fb49c;
+}

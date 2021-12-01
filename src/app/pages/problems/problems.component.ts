@@ -6,10 +6,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./problems.component.css']
 })
 export class ProblemsComponent implements OnInit {
-
-  constructor() { }
+  clickMessage = "";
+  constructor() { 
+    
+  }
 
   ngOnInit(): void {
   }
-
+  clickEvent(){
+    this.clickMessage = "You have clicked"
+  }
 }
+
+

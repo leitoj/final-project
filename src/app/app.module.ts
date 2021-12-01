@@ -11,6 +11,8 @@ import { HomeComponent } from './pages/home/home.component';
 import { PageNotFoundComponent } from './pages/page-not-found/page-not-found.component';
 import { JoseComponent } from './experiences-pages/jose/jose.component';
 import { LourdesComponent } from './experiences-pages/lourdes/lourdes.component';
+import { WelcomeComponent } from './experiences-pages/welcome/welcome.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -22,17 +24,25 @@ import { LourdesComponent } from './experiences-pages/lourdes/lourdes.component'
     HomeComponent,
     PageNotFoundComponent,
     JoseComponent,
-    LourdesComponent
+    LourdesComponent,
+    WelcomeComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule,
     RouterModule.forRoot([
       {path:'problems', component: ProblemsComponent},
       {
-        path:'experience', 
+        path:'experience',
         component: ExperienceComponent,
         children: [
+          {
+            path:'', 
+            pathMatch: 'full',
+            component: WelcomeComponent
+          },
           {
             path:'jose', 
             component: JoseComponent
