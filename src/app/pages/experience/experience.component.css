@@ -1,0 +1,5 @@
+.link-profile:hover{
+    background-color: #181818;
+    color: white;
+    transition: 300ms;
+}
